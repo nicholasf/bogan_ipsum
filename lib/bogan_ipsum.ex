@@ -1,6 +1,6 @@
 defmodule BoganIpsum do
 
-  def decode_bogan_json(filename) do
+  def decode_bogan(filename) do
     {:ok, raw} = File.read("#{Path.absname(".")}/priv/#{filename}.json")
     decoded = JSON.decode!(raw)
   end
@@ -10,7 +10,7 @@ defmodule BoganIpsum do
   end
 
   def words do
-    decode_bogan_json("words")
+    decode_bogan("words")
   end
 
   def word do
@@ -18,7 +18,7 @@ defmodule BoganIpsum do
   end
 
   def fillers do
-    decode_bogan_json("fillers")
+    decode_bogan("fillers")
   end
 
   def filler do
@@ -26,7 +26,7 @@ defmodule BoganIpsum do
   end
 
   def phrases do
-    decode_bogan_json("phrases")
+    decode_bogan("phrases")
   end
 
   def phrase do
