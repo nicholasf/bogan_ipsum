@@ -1,6 +1,10 @@
 # BoganIpsum
 
-An Elixir port of https://github.com/rvagg/node-boganipsum.git.
+An Elixir port of Bogan Ipsum by http://elevenmedia.com.au/.
+
+## Caveat
+
+Some of the language below is not politically correct. It is not intended to cause offense.
 
 ## Usage
 
@@ -32,3 +36,4 @@ Start up ied and load bogan:
 ```
 iex -S mix
 ```
+
