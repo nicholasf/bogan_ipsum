@@ -37,7 +37,19 @@ defmodule BoganIpsum do
     String.downcase random_item(phrases)
   end
 
+  def sentences(number, group) do
+    if number == 0 do
+      Enum.join group, " "
+    else
+      sentences(number - 1, group ++ ["#{phrase(:titleize)} #{word} #{filler} #{phrase} #{word}."])
+    end
+  end
+
+  def sentences(number) do
+    sentences(number, [])
+  end
+
   def sentence do
-    "#{phrase(:titleize)} #{word} #{filler} #{phrase} #{word}"
+    sentences(1)
   end
 end
