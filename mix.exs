@@ -10,14 +10,17 @@ defmodule BoganIpsum.Mixfile do
 
   # Configuration for the OTP application
   def application do
-    []
+    [
+      # mod:        { BoganIpsum, [] },
+      # registered: [ :bogan ]
+    ]
   end
 
   # Returns the list of dependencies in the format:
   # { :foobar, "~> 0.1", git: "https://github.com/elixir-lang/foobar.git" }
   defp deps do
     [
-      { :jsex, github: "talentdeficit/jsex" }
+      { :jazz, github: 'meh/jazz' }
     ]
   end
 end
