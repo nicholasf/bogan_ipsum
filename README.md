@@ -1,5 +1,24 @@
 # BoganIpsum
 
+# Usage
+```
+iex(1)> BoganIpsum.sentence()
+"As busy as a perve no worries grab us a bush oyster."
+
+iex(2)> BoganIpsum.sentences(3)
+"Mad as a thingo flamin as busy as a grundies. Shazza got us some bloody oath! bloody lets throw a frog in a sock. He's got a massive digger how watch out for the fruit loop."
+
+iex(3)> BoganIpsum.word
+"dog's balls"
+
+ex(5)> BoganIpsum.phrase
+"get a dog up ya"
+
+iex(6)> BoganIpsum.filler
+"where"
+```
+
+
 Ensure you have the latest Elixir installed.
 
 Run `mix deps.get'
@@ -11,24 +30,3 @@ iex -S mix
 ```
 
 Then ... yes, here come the bogans ...
-
-```
-♪  bogan_ipsum git:(master) ✗ iex -S mix
-Erlang R16B01 (erts-5.10.2) [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]
-
-/Users/nicholasf/code/nicholasf/bogan_ipsum/lib/bogan_ipsum.ex:5: variable decoded is unused
-Compiled lib/bogan_ipsum.ex
-Generated bogan_ipsum.app
-Interactive Elixir (0.10.2-dev) - press Ctrl+C to exit (type h() ENTER for help)
-iex(1)> BoganIpsum.sentence
-"As busy as a pig's arse piece of piss come a bush telly"
-iex(2)> BoganIpsum.sentence
-"As dry as a thongs bloody grab us a grundies"
-iex(3)> BoganIpsum.sentence
-"Lets throw a bloody oath! bloody lets throw a frog in a sock"
-iex(4)> BoganIpsum.sentence
-"He's got a massive digger how watch out for the galah"
-iex(5)> BoganIpsum.sentence
-"Grab us a corker when it'll be going off"
-
-```
