@@ -1,29 +1,36 @@
 defmodule BoganIpsum do
+
+  def decode_bogan_json(filename) do
+    {:ok, raw} = File.read("#{Path.absname(".")}/priv/#{filename}.json")
+    decoded = JSON.decode!(raw)
+  end
+
+  def random_item(vocab) do
+    Enum.at vocab, round(:random.uniform * Enum.count vocab)
+  end
+
   def words do
-    {:ok, words}  = JSON.decode!(File.read("#{Path.absname(".")}/priv/words.json"))
-    words
+    decode_bogan_json("words")
   end
 
   def word do
-    words[round(:random.uniform * Enum.count fillers)]
+    random_item(words)
   end
 
   def fillers do
-    {:ok, fillers }   = JSON.decode!(File.read("#{Path.absname(".")}/priv/fillers.json"))
-    fillers
+    decode_bogan_json("fillers")
   end
 
   def filler do
-    words[round(:random.uniform * Enum.count fillers)]
+    random_item(fillers)
   end
 
   def phrases do
-    {:ok, phrases }   = JSON.decode!(File.read("#{Path.absname(".")}/priv/phrases.json"))
-    phrases
+    decode_bogan_json("phrases")
   end
 
   def phrase do
-    words[round(:random.uniform * Enum.count fillers)]
+    random_item(phrases)
   end
 
   def sentence do
