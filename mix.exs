@@ -3,7 +3,7 @@ defmodule BoganIpsum.Mixfile do
 
   def project do
     [ app: :bogan_ipsum,
-      version: "0.0.1",
+      version: "0.0.2",
       elixir: "~> 0.10.2-dev",
       deps: deps ]
   end
