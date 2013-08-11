@@ -31,7 +31,7 @@ Ensure you have the latest Elixir installed.
 
 Run `mix deps.get'
 
-Start up ied and load bogan:
+Start up iex and load bogan:
 
 ```
 iex -S mix
