@@ -1,6 +1,16 @@
 # BoganIpsum
 
-Still working on this but for now ...
+Ensure you have the latest Elixir installed.
+
+Run `mix deps.get'
+
+Start up ied and load bogan:
+
+```
+iex -S mix
+```
+
+Then ... yes, here come the bogans ...
 
 ```
 ♪  bogan_ipsum git:(master) ✗ iex -S mix

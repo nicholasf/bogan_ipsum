@@ -14,7 +14,7 @@ defmodule BoganIpsum do
   end
 
   def word do
-    random_item(words)
+    String.downcase random_item(words)
   end
 
   def fillers do
@@ -22,18 +22,22 @@ defmodule BoganIpsum do
   end
 
   def filler do
-    random_item(fillers)
+    String.downcase random_item(fillers)
   end
 
   def phrases do
     decode_bogan("phrases")
   end
 
-  def phrase do
+  def phrase(:titleize) do
     random_item(phrases)
   end
 
+  def phrase do
+    String.downcase random_item(phrases)
+  end
+
   def sentence do
-    "#{phrase} #{word} #{filler} #{phrase} #{word}"
+    "#{phrase(:titleize)} #{word} #{filler} #{phrase} #{word}"
   end
 end
