@@ -6,7 +6,7 @@ defmodule BoganIpsum do
   end
 
   def random_item(vocab) do
-    Enum.at vocab, round(:random.uniform * Enum.count vocab)
+    String.strip Enum.at vocab, round(:random.uniform * Enum.count vocab)
   end
 
   def words do
