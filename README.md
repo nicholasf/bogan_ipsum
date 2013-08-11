@@ -37,3 +37,12 @@ Start up ied and load bogan:
 iex -S mix
 ```
 
+BoganIpsum is also available as an expm: http://expm.co/bogan_ipsum
+
+## Thanks
+
+I lifted the json data from @rvagg's version at https://github.com/rvagg/node-boganipsum.
+
+## License
+
+MIT.
