@@ -1,6 +1,9 @@
 # BoganIpsum
 
-# Usage
+An Elixir port of https://github.com/rvagg/node-boganipsum.git.
+
+## Usage
+
 ```
 iex(1)> BoganIpsum.sentence()
 "As busy as a perve no worries grab us a bush oyster."
@@ -18,6 +21,7 @@ iex(6)> BoganIpsum.filler
 "where"
 ```
 
+## Installing
 
 Ensure you have the latest Elixir installed.
 
@@ -28,5 +32,3 @@ Start up ied and load bogan:
 ```
 iex -S mix
 ```
-
-Then ... yes, here come the bogans ...
