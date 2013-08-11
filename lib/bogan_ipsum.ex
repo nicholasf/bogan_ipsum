@@ -1,0 +1,2 @@
+defmodule BoganIpsum do
+end
